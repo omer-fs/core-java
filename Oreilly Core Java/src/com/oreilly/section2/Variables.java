@@ -1,4 +1,4 @@
-package com.oreilly.section1;
+package com.oreilly.section2;
 
 public class Variables {
     public static void main(String[] args) {

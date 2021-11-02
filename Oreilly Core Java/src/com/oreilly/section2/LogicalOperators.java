@@ -1,4 +1,4 @@
-package com.oreilly.section1;
+package com.oreilly.section2;
 
 public class LogicalOperators {
     public static void main(String[] args) {
