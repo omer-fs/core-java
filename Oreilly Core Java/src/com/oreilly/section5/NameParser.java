@@ -1,0 +1,21 @@
+package com.oreilly.section5;
+
+import java.util.Scanner;
+
+public class NameParser {
+    public static void main(String[] args) {
+        Scanner keyboard=new Scanner(System.in);
+        String fullName;
+        String firstName;
+        String lastName;
+        System.out.println("what is your full name");
+        fullName=keyboard.nextLine();
+        int indexOfSpace=fullName.indexOf(" ");
+        firstName=fullName.substring(0,indexOfSpace);
+        lastName=fullName.substring(indexOfSpace+1);
+        firstName=firstName.toUpperCase();
+        lastName=lastName.toLowerCase();
+        System.out.println("first name is : "+firstName);
+        System.out.println("last name is : "+lastName);
+    }
+}
