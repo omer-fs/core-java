@@ -1,0 +1,22 @@
+StringBuilder class :
+
+    - The classname is in upper camel case/Pascal case.
+    - The method names are in lower camel case except the constructors. Ex. append(), capacity().
+    - methods are public.
+    - methods name are verbs.
+    - variables are also in lower camel case, ex. offset, endIndex, startIndex.
+    - variables does not start with special characters.
+    - Doesn't contain/avoids one-character variables.
+
+
+
+LocalDateTime class :
+
+    - The classname is in upper camel case/Pascal case.
+    - The method names are in lower camel case except the constructors. Ex. get(), format().
+    - methods are public.
+    - methods name are verbs.
+    - Constants are in capital letters and follows snake case.
+    - variables are also in lower camel case, ex. days, time, formatter.
+    - variables does not start with special characters.
+    - Doesn't contain/avoids one-character variables.
