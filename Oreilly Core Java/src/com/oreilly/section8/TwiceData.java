@@ -2,28 +2,29 @@ package com.oreilly.section8;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class FileInputFun {
+public class TwiceData {
     public static void main(String[] args) {
         Scanner infile;
+        PrintWriter pw;
         try {
-            File file=new File("/home/syedof/IdeaProjects/core-java/Oreilly Core Java/src/com/oreilly/section8/input.txt");
-            infile=new Scanner(file);
-            int sum=0;
+            infile=new Scanner(new File("nums.txt"));
+            pw=new PrintWriter("/home/syedof/IdeaProjects/core-java/Oreilly Core Java/src/com/oreilly/section8/twice_nums.txt");
             int input;
             while (infile.hasNext())
             {
                 input=infile.nextInt();
-                sum+=input;
-                System.out.println(input);
+                input*=2;
+                pw.println(input);
             }
-            System.out.println("sum is "+sum);
             infile.close();
+            pw.close();
         }
         catch (FileNotFoundException e)
         {
-            System.out.println("cant find file");
+            System.out.println(e.getMessage());
         }
     }
 }

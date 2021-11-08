@@ -1,0 +1,7 @@
+sam is 12 years old.
+nitin is 13 years old.
+ram is 14 years old.
+sham is 15 years old.
+alice is 16 years old.
+ravi is 17 years old.
+kishore is 18 years old.
