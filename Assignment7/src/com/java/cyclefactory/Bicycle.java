@@ -13,6 +13,6 @@ public class Bicycle implements Cycle{
 
     @Override
     public void build() {
-        System.out.println("Bicycle structure");
+        System.out.println("Bicycle manufactured");
     }
 }

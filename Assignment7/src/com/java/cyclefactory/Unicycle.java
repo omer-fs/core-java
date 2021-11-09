@@ -13,6 +13,6 @@ public class Unicycle implements Cycle{
 
     @Override
     public void build() {
-        System.out.println("Unicycle structure");
+        System.out.println("Unicycle manufactured");
     }
 }

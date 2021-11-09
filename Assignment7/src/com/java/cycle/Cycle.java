@@ -3,7 +3,7 @@ package com.java.cycle;
 public class Cycle {
 
     public Cycle() {
-        System.out.println("Inside cycle class");
+        System.out.println("Inside Cycle Class");
     }
 
     public void balance(){

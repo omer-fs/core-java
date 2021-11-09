@@ -6,10 +6,14 @@ public class Rodent {
     }
 
     public void family() {
-        System.out.println("Family they belong to\n");
+        System.out.println("Family they belong to");
     }
 
     public void habitat() {
-        System.out.println("Habitat they live in\n");
+        System.out.println("Habitat they live in");
+    }
+
+    public void haveCanine(){
+        System.out.println("May or may not have Canine");
     }
 }

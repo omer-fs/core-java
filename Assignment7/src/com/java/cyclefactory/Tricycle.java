@@ -13,6 +13,6 @@ public class Tricycle implements Cycle{
 
     @Override
     public void build() {
-        System.out.println("tricycle structure");
+        System.out.println("tricycle manufactured");
     }
 }

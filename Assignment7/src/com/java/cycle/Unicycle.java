@@ -2,7 +2,7 @@ package com.java.cycle;
 
 public class Unicycle extends Cycle{
     public Unicycle() {
-        System.out.println("Inside of unicycle class");
+        System.out.println("Inside Unicycle Class");
     }
 
     public void balance(){

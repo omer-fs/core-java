@@ -2,37 +2,37 @@ package com.java.interfaceusage;
 
 public class Concrete implements BaseInterface{
     @Override
-    public void baseFoo() {
-        System.out.println("Base Interface function");
+    public void method() {
+        System.out.println("Base Interface method");
     }
 
     @Override
-    public void foo1() {
-        System.out.println("Interface1 function-1");
+    public void first1() {
+        System.out.println("Interface1 method-1");
     }
 
     @Override
-    public void bar1() {
-        System.out.println("Interface1 function-2");
+    public void first2() {
+        System.out.println("Interface1 method-2");
     }
 
     @Override
-    public void foo2() {
-        System.out.println("Interface2 function-1");
+    public void second1() {
+        System.out.println("Interface2 method-1");
     }
 
     @Override
-    public void bar2() {
-        System.out.println("Interface1 function-2");
+    public void second2() {
+        System.out.println("Interface1 method-2");
     }
 
     @Override
-    public void foo3() {
-        System.out.println("Interface3 function-1");
+    public void third1() {
+        System.out.println("Interface3 method-1");
     }
 
     @Override
-    public void bar3() {
-        System.out.println("Interface3 function-2");
+    public void third2() {
+        System.out.println("Interface3 method-2");
     }
 }

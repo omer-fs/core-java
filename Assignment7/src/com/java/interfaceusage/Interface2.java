@@ -1,6 +1,6 @@
 package com.java.interfaceusage;
 
 public interface Interface2 {
-    void foo2();
-    void bar2();
+    void second1();
+    void second2();
 }

@@ -3,13 +3,16 @@ package com.java.cyclefactory;
 public class Main {
     public static void main(String[] args)
     {
-        CycleFactory cf = new CycleFactory();
+        UnicycleFactory unicycleFactory = new UnicycleFactory();
+        Cycle newUnicycle = unicycleFactory.buildUnicycle();
+        newUnicycle.build();
 
-        Cycle newCycle = cf.buildCycle("tricycle");
-        newCycle.build();
+        BicycleFactory bicycleFactory = new BicycleFactory();
+        Cycle newBicycle = bicycleFactory.buildBicycle();
+        newBicycle.build();
 
-        Cycle newCycle2 = cf.buildCycle("bicycle");
-        newCycle2.build();
-
+        TricycleFactory tricycleFactory = new TricycleFactory();
+        Cycle newTricycle = tricycleFactory.buildTricycle();
+        newTricycle.build();
     }
 }
