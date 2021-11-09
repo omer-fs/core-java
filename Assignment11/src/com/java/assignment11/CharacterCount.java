@@ -10,31 +10,26 @@ import java.util.Scanner;
 
 public class CharacterCount {
     public static void main(String args[]) throws FileNotFoundException {
-        HashMap<Character,Integer> countCharacters=new HashMap<>();
-        //System.out.println(args[0]);
-        //File inputFile = new File(args[0]);
+        HashMap<Character,Integer> characterCount=new HashMap<>();
+
         Scanner keyboard=new Scanner(new File(args[0]));
-        while(keyboard.hasNext())
-        {
-            for(char c:keyboard.nextLine().toCharArray())
-            {
-                if (countCharacters.containsKey(c))
-                {
-                    countCharacters.put(c,countCharacters.get(c)+1);
+        while(keyboard.hasNext()) {
+            for(char c:keyboard.nextLine().toCharArray()) {
+                if (characterCount.containsKey(c)) {
+                    characterCount.put(c,characterCount.get(c)+1);
                 }
-                else
-                {
-                    countCharacters.put(c,1);
+                else {
+                    characterCount.put(c,1);
                 }
             }
         }
-        System.out.println("printed output to file named OutputText.txt");
-        PrintWriter pw=new PrintWriter("/home/syedof/IdeaProjects/Assignment11/src/com/java/assignment11/OutputText.txt");
-        pw.println("Character        Count");
-        for(Character c:countCharacters.keySet())
+        System.out.println("Output is printed to file OutputText.txt");
+        PrintWriter p=new PrintWriter("/home/syedof/IdeaProjects/Assignment11/src/com/java/assignment11/OutputText.txt");
+        p.println("Character+++++++++++++++Count");
+        for(Character c:characterCount.keySet())
         {
-            pw.println(c+"        "+countCharacters.get(c));
+            p.println(c+"          "+characterCount.get(c));
         }
-        pw.close();
+        p.close();
     }
 }
