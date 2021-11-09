@@ -8,10 +8,10 @@ public class SListIterator<T> {
         tail=null;
     }
 
-    public void insert(T data){
-        Node<T>  newNode = new Node<>(data);
+    public void insertNode(T value) {
+        Node<T>  newNode = new Node<>(value);
 
-        if(head == null){
+        if(head == null) {
             head = newNode;
             tail = newNode;
         }
@@ -21,17 +21,16 @@ public class SListIterator<T> {
         }
     }
 
-    public void delete(T data){
+    public void deleteNode(T value) {
         Node<T>  tempNode = head;
         Node<T> previousNode = null;
 
-        if(head.data == data){
+        if(head.value == value){
             head = tempNode.next;
             return;
         }
-
         while(tempNode != null){
-            if(tempNode.data == data){
+            if(tempNode.value == value) {
                 previousNode.next = tempNode.next;
             }
             previousNode = tempNode;
@@ -39,12 +38,12 @@ public class SListIterator<T> {
         }
     }
 
-    public void print() {
+    public void printList() {
         Node<T>  tempNode = head;
         while (tempNode != null) {
-            System.out.print(tempNode.data+"-->");
+            System.out.print(tempNode.value+" -> ");
             tempNode = tempNode.next;
         }
-        System.out.println("Null");
+        System.out.println("NULL");
     }
 }

@@ -6,17 +6,19 @@ public class Main {
         SList<Integer> list = new SList<>();
         SListIterator<Integer> sListIterator = list.iterator();
 
-        // inserting the nodes in linked list
-        sListIterator.insert(10);
-        sListIterator.insert(20);
-        sListIterator.insert(30);
-        sListIterator.insert(40);
+        // Inserting the nodes in linked list
+        sListIterator.insertNode(10);
+        sListIterator.insertNode(20);
+        sListIterator.insertNode(30);
+        sListIterator.insertNode(40);
+        sListIterator.insertNode(50);
 
-        sListIterator.print();
+        sListIterator.printList();
 
-        sListIterator.delete(40);
-        sListIterator.delete(20);
+        // Deleting few nodes from list
+        sListIterator.deleteNode(40);
+        sListIterator.deleteNode(20);
 
-        sListIterator.print();
+        sListIterator.printList();
     }
 }
