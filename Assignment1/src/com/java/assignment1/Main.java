@@ -8,17 +8,17 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        SearchFile fileSearch = new SearchFile();
+        SearchFile fs = new SearchFile();
         
         File folder = new File("/home/syedof");
 
         // Taking input for regular expression
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String reg = br.readLine();
+        BufferedReader bufferreader = new BufferedReader(new InputStreamReader(System.in));
+        String reg = bufferreader.readLine();
 
         while(!reg.equals("")) {
-            fileSearch.iterateDirectory(folder, reg);
-            reg = br.readLine();
+            fs.iterateDirectory(folder, reg);
+            reg = bufferreader.readLine();
         }
 
     }
