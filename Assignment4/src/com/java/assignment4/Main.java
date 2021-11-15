@@ -5,22 +5,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws ParseException {
-        KycForm kf = new KycForm();
+        KycForm kycform = new KycForm();
 
         // taking input from user
-        Scanner ob = new Scanner(System.in);
-        int t = ob.nextInt();
-        ob.nextLine();
+        Scanner input = new Scanner(System.in);
+        int t = input.nextInt();
+        input.nextLine();
         String s;
         for(int i = 0; i < t; i++){
-            s = ob.nextLine();
+            s = input.nextLine();
 
             String[] dates = s.split(" ");
 
             String regDate = dates[0];
             String currDate = dates[1];
 
-            kf.dateFormat(regDate, currDate);
+            kycform.dateFormat(regDate, currDate);
 
 
         }
